@@ -1,0 +1,11 @@
+<div class= "block question">
+  <p><%= params[:question].capitalize %></p>
+  <p class="speaker">--You</p>
+</div>
+
+<div class= "block answer">
+<p><%= @answer %></p>
+<p class="speaker">--Your coach</p>
+</div>
+
+<%= link_to "Ask a new question", ask_path, class: "text-decoration-none" %>
